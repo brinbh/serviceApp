@@ -15,6 +15,12 @@ import { ContactEditComponent } from './contact/contact-edit/contact-edit.compon
 import { ContactItemComponent } from './contact/contact-item/contact-item.component';
 import { ContactListComponent } from './contact/contact-list/contact-list.component';
 import {GroupService} from "./groups/group.service";
+import {DocumentService} from "./documents/document.service";
+import {AppRoutingModule} from "./app-routing";
+import { HeaderComponent } from './header/header.component';
+import { LoadPageComponent } from './load-page/load-page.component';
+import { ManagerComponent } from './manager/manager.component';
+import {ContactService} from "./contact/contact.service";
 
 @NgModule({
   declarations: [
@@ -30,12 +36,16 @@ import {GroupService} from "./groups/group.service";
     ContactDetailComponent,
     ContactEditComponent,
     ContactItemComponent,
-    ContactListComponent
+    ContactListComponent,
+    HeaderComponent,
+    LoadPageComponent,
+    ManagerComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
-  providers: [GroupService],
+  providers: [GroupService, DocumentService, ContactService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

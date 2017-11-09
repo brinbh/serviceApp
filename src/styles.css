@@ -1,1 +1,67 @@
-/* You can add global styles to this file, and also import other style files */
+/*
+*Color
+*/
+
+.color-1{
+  background-color: #f2f2f2;
+}
+.color-2{
+  background-color: #78A8B3;
+}
+.color-3{
+  background-color: #336E7B;
+}
+.color-4{
+  background-color: #334A4F;
+}
+.color-5{
+  background-color: #333333;
+}
+.color-6{
+  background-color: #7B4433;
+}
+
+/*
+*TYPOGRAPHY
+*/
+
+h1, h2, h3, h4, h5, h6, p, a {
+  font-family: 'Open Sans', sans-serif;
+}
+h1{
+  font-weight: 300;
+  color: #f2f2f2;
+  background-color: #336E7B;
+  height: 63px;
+  padding-left: 15px;
+}
+h2{
+  font-weight: 600;
+  color: #cccccc;
+  font-variant: small-caps;
+}
+h3{
+  font-weight: 600;
+  color: #000000;
+}
+p{
+  font-weight: 400;
+  color: #000000;
+}
+.p-bold{
+  font-weight: 700;
+  color: #000000;
+}
+.date{
+  font-weight: 700;
+  color: #cccccc;
+}
+.small{
+  font-weight: 600;
+  color: #cccccc;
+}
+
+a{
+  text-decoration: none;
+  cursor: pointer;
+}

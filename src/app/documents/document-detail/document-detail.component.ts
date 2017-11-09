@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Document} from "../document.module";
 
 @Component({
   selector: 'app-document-detail',

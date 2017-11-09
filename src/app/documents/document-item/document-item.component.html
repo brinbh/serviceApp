@@ -1,1 +1,12 @@
-<app-document-detail></app-document-detail>
+<div class="note">
+<div class="note-header">
+  <p class="date">{{document.date}}</p>
+  <a [routerLink] ="[index]"
+   (click)="onSelected(document)">Edit</a>
+</div>
+<div class="note-content">
+  <p><strong>{{document.group}}</strong></p>
+<p>{{document.subject}}</p>
+<p>{{document.note}}</p>
+</div>
+</div>

@@ -1,11 +1,19 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { DocumentEditComponent } from './document-edit/document-edit.component';
 
-@NgModule({
-  imports: [
-    CommonModule
-  ],
-  declarations: [DocumentEditComponent]
-})
-export class DocumentModule { }
+@NgModule()
+export class Document {
+  id: string;
+  group: string;
+  subject: string;
+  date: string;
+  note: string;
+
+  constructor(id: string, group: string, subject: string, date: string, note: string){
+    this.id = id;
+    this.group = group;
+    this.subject = subject;
+    this.date = date;
+    this.note = note;
+  }
+
+}

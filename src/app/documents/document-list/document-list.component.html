@@ -1,1 +1,4 @@
-<app-document-item></app-document-item>
+<app-document-item
+  *ngFor="let documentEl of documents"
+  [document]="documentEl"
+  [index]="i"></app-document-item>

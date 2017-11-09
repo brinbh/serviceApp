@@ -1,1 +1,4 @@
-<app-contact-item></app-contact-item>
+<app-contact-item
+  *ngFor="let contactEl of contacts"
+  [contact]="contactEl"
+  [index]="i"></app-contact-item>
