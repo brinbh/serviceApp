@@ -1,3 +1,14 @@
+<a routerLink="../manager"><h1>Contacts</h1></a>
+<div class="order">
+  <div class="order-opt">
+  <p class="small">Name</p>
+  <p class="small">Job</p>
+  </div>
+  <p>+</p>
+</div>
+<div class="group color-2">
+  <p>A</p>
+</div>
 <app-contact-item
   *ngFor="let contactEl of contacts"
   [contact]="contactEl"

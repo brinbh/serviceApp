@@ -11,13 +11,14 @@ import {Document} from "../document.module";
 export class DocumentEditComponent implements OnInit {
   @Input() document: Document;
   id: number;
-  constructor(private documentService: DocumentService, private route: ActivatedRoute) { }
+  editMode = false;
+  constructor(private route: ActivatedRoute) { }
 
   ngOnInit() {
     this.route.params.subscribe(
       (params: Params) =>{
         this.id = +params["id"];
-        this.document = this.documentService.getDocumentIndex(this.id);
+        this.editMode = params['id'] != null;
       }
     );
   }

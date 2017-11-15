@@ -1,11 +1,12 @@
-import {Injectable, EventEmitter} from '@angular/core';
+import {Injectable} from '@angular/core';
 import {Group} from "./group.module";
 import {GROUPS} from "./GROUPS";
+import {Subject} from "rxjs/Subject";
 
 @Injectable()
 export class GroupService {
   groups: Group[] = [];
-  groupSelectedEvent = new EventEmitter<Group>();
+  groupSelectedEvent = new Subject<Group>();
 
   constructor() {
     this.groups = GROUPS;
@@ -17,7 +18,7 @@ export class GroupService {
   }
   getGroup(id: string){
     for (var i = 0; i < this.groups.length; i++){
-      if (this.groups[i].groupId == id){
+      if (this.groups[i].groupId === id){
         return this.groups[i];
       }
     }

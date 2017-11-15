@@ -13,6 +13,7 @@ export class GroupListComponent implements OnInit {
 
   ngOnInit() {
     this.groups = this.groupService.getGroups();
+
   }
 
 }

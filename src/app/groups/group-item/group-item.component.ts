@@ -1,6 +1,7 @@
 import {Component, OnInit, Input} from '@angular/core';
 import {GroupService} from "../group.service";
 import {Group} from "../group.module";
+import {Router, ActivatedRoute} from "@angular/router";
 
 @Component({
   selector: 'app-group-item',
@@ -9,13 +10,18 @@ import {Group} from "../group.module";
 })
 export class GroupItemComponent implements OnInit {
   @Input() group: Group;
-  constructor(private groupService: GroupService) { }
+  constructor(private groupService: GroupService,
+              private router: Router,
+              private route: ActivatedRoute) { }
 
   ngOnInit() {
-
+    this.groupService.groupSelectedEvent.subscribe(
+      (group: Group) => {this.group = group});
   }
+
   onSelected(){
-    this.groupService.groupSelectedEvent.emit(this.group);
+    this.groupService.groupSelectedEvent.next(this.group);
+    // this.router.navigate(['manager'], {relativeTo: this.route});
   }
 
 }

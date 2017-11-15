@@ -1,12 +1,16 @@
 <div class="note">
 <div class="note-header">
   <p class="date">{{document.date}}</p>
-  <a [routerLink] ="[index]"
-   (click)="onSelected(document)">Edit</a>
+  <div>
+  <a (click) = "onDeleteDocument()"><img src="..\..\src\assets\images\button-1.png"/></a>
+  <a (click) = "onEditDocument()"><img src="C:\Users\Britt\saa\src\assets\images\button-2.png"/></a>
+    <a (click) = "onStarDocument()"><img src="C:\Users\Britt\saa\src\assets\images\button-3.png"/></a>
+  </div>
 </div>
 <div class="note-content">
-  <p><strong>{{document.group}}</strong></p>
+  <p>{{document.group}}</p>
 <p>{{document.subject}}</p>
 <p>{{document.note}}</p>
 </div>
 </div>
+

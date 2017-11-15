@@ -14,6 +14,9 @@
 .color-4{
   background-color: #334A4F;
 }
+.color-4-drk{
+  background-color: #243438;
+}
 .color-5{
   background-color: #333333;
 }
@@ -27,13 +30,17 @@
 
 h1, h2, h3, h4, h5, h6, p, a {
   font-family: 'Open Sans', sans-serif;
+  padding: 0;
 }
 h1{
   font-weight: 300;
   color: #f2f2f2;
   background-color: #336E7B;
-  height: 63px;
-  padding-left: 15px;
+  padding: 10px 20px;
+  margin-left: -10px;
+  margin-top: -10px;
+  font-size: 1.6rem;
+  text-align: center;
 }
 h2{
   font-weight: 600;
@@ -43,10 +50,12 @@ h2{
 h3{
   font-weight: 600;
   color: #000000;
+  font-size: 1.3rem;
 }
 p{
   font-weight: 400;
   color: #000000;
+  font-size: .9rem;
 }
 .p-bold{
   font-weight: 700;
@@ -59,6 +68,24 @@ p{
 .small{
   font-weight: 600;
   color: #cccccc;
+}
+.subtitle{
+  background-color: #334A4F;
+  height: 56px;
+  padding-left: 20px;
+  margin-left: 15px;
+  position: relative;
+}
+.subtitle::before{
+  display: block;
+  content: "";
+  background-color: #243438;
+  width:15px;
+  height: 57px;
+  position: absolute;
+  margin-left: -35px;
+  margin-top: -5px;
+  transform: skew(0deg,30deg);
 }
 
 a{

@@ -1,4 +1,13 @@
+<a routerLink="../manager"><h1>Getting Started</h1></a>
+<p>Welcome to being a manager for High School Tutoring!
+  Below are some instructions from past managers</p>
+<div class="subtitle">
+  <h2>notes</h2>
+  <a (click) = "onNewDocument()">+</a>
+</div>
+<div class="notebook color-1">
 <app-document-item
-  *ngFor="let documentEl of documents"
+  *ngFor="let documentEl of documents; let i = index;"
   [document]="documentEl"
   [index]="i"></app-document-item>
+</div>

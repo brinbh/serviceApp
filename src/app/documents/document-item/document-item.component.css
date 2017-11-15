@@ -1,0 +1,10 @@
+.note{
+  background-color: #ffffff;
+  padding: 22px;
+  margin:20px 36px;
+}
+.note-header{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}

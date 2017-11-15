@@ -21,6 +21,7 @@ import { HeaderComponent } from './header/header.component';
 import { LoadPageComponent } from './load-page/load-page.component';
 import { ManagerComponent } from './manager/manager.component';
 import {ContactService} from "./contact/contact.service";
+import {DocumentEditComponent} from "./documents/document-edit/document-edit.component";
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import {ContactService} from "./contact/contact.service";
     DocumentDetailComponent,
     DocumentItemComponent,
     DocumentListComponent,
+    DocumentEditComponent,
     GroupsComponent,
     GroupListComponent,
     GroupItemComponent,

@@ -1,0 +1,16 @@
+h3{
+  width: 100%;
+  margin-left: 20px;
+  padding: 22px;
+}
+h3::before{
+  display: block;
+  content: "";
+  background-color: #cccccc;
+  width:15px;
+  height: 70px;
+  position: absolute;
+  margin-left: -35px;
+  margin-top: -26px;
+  transform: skew(0deg,30deg);
+}

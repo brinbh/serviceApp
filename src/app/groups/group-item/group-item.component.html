@@ -1,7 +1,7 @@
 <div class="group-name">
 <a
-  routerLink="../manager"
+  routerLink="../manager/{{group.groupId}}"
   (click)="onSelected(group)">
-  {{group.groupName}}
+  <h3 class="color-1">{{group.groupName}}</h3>
 </a>
 </div>
